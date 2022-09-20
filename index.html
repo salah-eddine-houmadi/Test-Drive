@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>wel</title>
+</head>
+<body>
+	<div class="container" id="bike">
+		<nav>
+			<img src="img/logo.png" class="logo">
+			<a href="#" class="btn">Test Drive</a>
+		</nav>
+		<div class="content">
+			<h2>THE BMW</h2>
+			<h1>G 310 R</h1>
+			<p>Bayerische Motoren Werke AG ou plus communément appelé BMW Group, est un groupe automobile allemand fondé en 1916 par Gustav Otto et Karl Friedrich Rapp, et basé à Munich en Bavière. Il commercialise des automobiles à travers ses marques BMW, Mini et Rolls-Royce, ainsi que des motocyclettes sous la marque BMW.</p>
+			<h3>Chooose your colour</h3>
+
+
+			<div class="colour-select">
+				<div id="red"></div>
+				<div id="blue"></div>
+				<div id="black"></div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+
+	<script type="text/javascript">
+		
+		let redBtn = document.getElementById("red");
+		let blueBtn = document.getElementById("blue");
+		let blackBtn = document.getElementById("black");
+		let bike = document.getElementById("bike");
+
+		redBtn.onclick = function(){
+			bike.style.backgroundImage = "url(img/BMW1.png)";
+
+		}
+		blueBtn.onclick = function(){
+			bike.style.backgroundImage = "url(img/BMW2.png)";
+
+		}
+		blackBtn.onclick = function(){
+			bike.style.backgroundImage = "url(img/BMW3.png)";
+
+		}
+	</script>
+
+</body>
+</html>
